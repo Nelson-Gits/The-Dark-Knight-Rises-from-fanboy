@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>The Dark knight rises from Fan Boy</title>
+</head>
+<body>
+    <audio id="myAudio" autoplay="true" loop="true">
+        <source src="15-hans_zimmer-rise.mp3" type="audio/mpeg">
+      </audio>
+
+    <section>
+        <img src="wallpapersden.com_batman-cool-the-dark-knight_5824x3264.jpg" id="bg">
+        <h1 id="title"> The Dark Knight Rises</h1>
+        <img src="Batman.jpg" id="batman">
+        <img src="Warner_Bros._logo_2023.svg.png" id="logo">
+    </section>
+     
+    <!-- Row-1 -->
+    <div class="row1">
+        <div class="column left">
+            <h2 class="anim1">Story so far</h2>
+            <p class="anim1">It has been eight years since Batman, in collusion with Commissioner Gordon, vanished into the night. Assuming responsibility for the death of Harvey Dent, Batman sacrificed everything for what he and Gordon hoped would be the greater good. However, the arrival of a cunning cat burglar  and a merciless terrorist named Bane force Batman out of exile and into a battle he may not be able to win..</p>
+        </div>
+        <div class="column right">
+            <img src="png.gif" width="400px" height="400px"> 
+        </div>
+    </div>
+
+    <!-- Row-2 -->
+    <div class="row2">
+        <div class="column2 left2">
+            <img src="bane.jpg" id="gif2" width="550px" height="300px">
+        </div>
+        <div class="column2 right2">
+            <p class="anim2">
+                Born in a prison on a remote Caribbean island, Bane was raised without pity or compassion. As an adult, he served as a test subject for the super-steroid called Venom. Superhumanly strong, Bane escaped his hell and headed to Gotham City—where he chose to make his mark by defeating the Batman..</p>
+        </div>
+    </div>
+
+    <!-- Row-3 -->
+    <div class="row3">
+        <div class="column3 left3">
+            <p class="anim3">During the first act, she is an antagonist until Bane defeats Batman in the sewers. In the second act, which lasts from Bane imprisoning Bruce Wayne to Wayne's return to Gotham, she is neutral and indecisive. Finally, in the last act, the revolution, she becomes a protagonist and helps batman in defeating Bane.
+        </div>
+        <div class="column3 right3">
+            <img src="the-dark-knight-rises-batman-and-cat-woman-8n4s9fr4wqj9pfu6.jpg" id="gif3" width="500px" height="250px">
+        </div>
+    </div>
+
+    <!-- Row-4 -->
+    <div class="row4">
+        <div class="column4 left4">
+            <video controls width="700">
+                <source src="The Dark Knight Rises - Bruce Climbs Out Of The Pit 1080p HD.mp4"  type="video/mp4" id="gif4" >
+                Your browser does not support the video tag.
+              </video>
+
+        </div>
+        <div class="column4 right4">
+            <p class="anim4"> the Pit is a prison where men are put to die of despair by feeding them hope. It is a prison in the ancient part of the world, where Ra's Al Ghul's wife was sent to. After Talia escapes the pit due to Bane help, Bane took control of the prison and sent Bruce to the pit after capturing it.<br>
+                Following their first battle, Bane and his mercenaries took Bruce Wayne to The Pit where they held Wayne in order to torture him. The prisoner was paid by them to watch after Bruce Wayne and to keep him alive long enough to watch Gotham fall into chaos until it was to be destroyed by a nuclear bomb.<br>
+                Bruce Wayne escaped the pit; and made sure to save his fellow prisoners; he's going to Gotham to give them another rope.</p>
+        </div>
+    </div>    
+
+    <!-- Row-5 Footer -->
+    <footer class="footer">
+            <h4> All Rights Reserved - Nelson S @2024</h4>
+        </div>
+    </footer>
+
+    <!-- Scripts :Do not touch -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollTrigger.min.js"></script>
+ 
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
+	
+    <script>
+    //Audio Playing
+    window.onload= function(){
+        document.getElementById("myAudio"). play();
+    }
+    var vid= document.getElementById("myAudio");
+    vid.volume = 0.2;
+
+    // Scroll Animation
+    gsap.to("#bg", {
+        scrollTrigger: {
+            scrub: 1
+        }, 
+        scale: 1.5
+    });
+    gsap.to("#title", {
+        scrollTrigger: {
+            scrub: 1.2
+        }, 
+        scale: 1.8
+    });
+
+    gsap.to("#spidy", {
+        scrollTrigger: {
+            scrub: 1.5
+        }, 
+        scale: 1.5
+    }); 
+
+    gsap.to("#logo", {
+        scrollTrigger: {
+            scrub: 1
+        }, 
+        y: 500
+    }); 
+
+    gsap.from("#toggle", {
+        scrollTrigger:  {
+            scrub: 1
+        }, 
+        x: -40
+    });
+    
+    gsap.to("#batman", {
+        scrollTrigger: {
+            scrub: 1
+        },
+            y: 1600,
+            x: 300,
+            scale: 4
+        })
+    
+    // Row-1 Animation
+    gsap.to(".anim1", {
+        scrollTrigger: {
+            scrub: 1,
+            duration: 1
+        },
+        x: 40
+    })
+
+    // Row-2 Animation
+    gsap.to("#gif2",{
+        scrollTrigger: {
+            scrub: 1.5
+        },
+        x: 70
+    })
+
+    gsap.from(".anim2", {
+        scrollTrigger: {
+            scrub: 1.5,
+            duration: 1
+        },
+        x: 80
+    })
+
+    // Row-3 Animation
+    gsap.to(".anim3", {
+        scrollTrigger: {
+            scrub: 1.5,
+            duration: 1
+        },
+        x: 30
+    })
+
+    gsap.from("#gif3",{
+        scrollTrigger: {
+            scrub: 1.5
+        },
+        x: 30
+    })
+
+    // Row-4 Animation
+    gsap.to("#gif4",{
+        scrollTrigger: {
+            scrub: 1
+        },
+        x: 50
+    })
+
+    gsap.from(".anim4", {
+        scrollTrigger: {
+            scrub: 1.5,
+            duration: 1
+        },
+        x: 100
+    })
+    </script>
+
+</body> 
+</html>
